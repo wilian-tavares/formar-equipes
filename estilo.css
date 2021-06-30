@@ -1,0 +1,182 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body {
+    background: rgb(145, 145, 145);
+}
+
+.container {
+    width: 920px;
+    height: 100vh;
+    background: #ccc;
+    margin: 20px auto;
+}
+
+.container .conteudo{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    /* align-items: center; */
+
+
+    flex-wrap: wrap;
+
+  
+}
+
+.container .nomes {
+    width: 600px;
+    height: 50px;
+    font-size: 2rem;
+    padding: 10px; 
+}
+
+.container .conteudo .botao {
+    margin: 20px auto;
+    width: 25vh;
+
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: 35%;
+}
+.container .conteudo  .botao-cadastrar-nome {
+    background: green;
+}
+.container .conteudo  .botao-sortear {
+    background: yellow;
+}
+
+.container .conteudo .resultado {
+    width: 600px;
+    height: 100px;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+.container .conteudo .sorteados input {
+    width: 300px;
+    height: 200px;
+    
+}
+
+.container .conteudo .sorteados .timeA {
+    color: rgb(81, 75, 158);
+    font-size: 2rem;
+    
+    background: url(imagens/terrorista.png) no-repeat center;
+    opacity: 0.7;
+    background-size: contain;
+    width: 100%;
+   
+}
+.container .conteudo .sorteados .timeB {
+    color: rgb(34, 190, 190);
+    font-size: 2rem;
+    background: url(imagens/policia.png) #ccc no-repeat center;
+    opacity: 0.7;
+    background-size: contain;
+    width: 100%;
+}
+
+
+
+/* Responsive */
+
+@media(max-width: 768px) {
+    .container {
+        width: 768px;
+        height: 50px;
+        background: red;
+    }
+.container .conteudo .nomes {
+    width: 90vw;
+  
+}
+.container .conteudo .resultado {
+    width: 90vw;
+    
+}
+.container .conteudo .botao {
+    width: 50vw;
+    margin: 20px auto;
+}
+
+.container .conteudo .sorteados .timeA {
+    width: 70vh;
+    
+}
+.container .conteudo .sorteados .timeB {
+    width: 100%;
+
+}
+
+
+
+@media(max-width: 540px) {
+    .container {
+        width: 100%;
+        height: 50px;
+        background: red;
+    }
+    .container .conteudo .nomes {
+        width: 90vw;
+    }
+    .container .conteudo .resultado {
+        width: 90vw; 
+    }
+    .container .conteudo .botao {
+        width: 200px;
+        margin: 20px auto;
+        margin: 20px auto;
+    }
+
+    .container .conteudo .sorteados .timeA {
+        width: 70vh;
+        
+    }
+    .container .conteudo .sorteados .timeB {
+        width: 70vh;
+
+    }
+
+}
+
+
+@media(max-width: 360px) {
+    .container {
+        width: 100%;
+        height: 50px;
+        background: red;
+    }
+.container .conteudo .nomes {
+    width: 90vw;
+  
+}
+.container .conteudo .resultado {
+    width: 90vw;
+    
+}
+.container .conteudo .botao {
+   width: 50vw;
+   
+   margin: 20px 20vw;
+   background: green;
+   
+}
+
+.container .conteudo .sorteados .timeA {
+    width: 90vw;
+    
+}
+.container .conteudo .sorteados .timeB {
+    width: 90vw;
+
+}
+
+}
+
+}

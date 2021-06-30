@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <script src="javascript.js"></script>
+
+
+    <title>Sorteador - Nomes</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <h1 style="text-align:center;">Embaralhador</h1>
+        </div>
+
+        <div class="conteudo">
+
+            <div>
+                <input type="text" id="nomes" class="nomes" placeholder="Cadastre o Nome">
+                <br>
+                <button type="submit" onclick="cadastrarNome()" id="botao-cadastrar-nome"
+                    class="botao botao-cadastrar-nome">Cadastrar
+                </button>
+            </div>
+
+            <div>
+                <input type="text-area" id="resultado" class="resultado" disabled="disabled"
+                    placeholder="Nomes Cadastrados">
+                <br>
+                <button onclick="sortear(), formarTimes(nomesCadastrados)" type="submit" class="botao botao-sortear"
+                    id="botao-sortear">Sortear</button>
+            </div>
+
+            <div class="sorteados" id="sorteados">
+
+                <label style="text-align: center;">Time A</label>
+
+                <input type="text" class="timeA" id="timeA" disabled="disabled">
+
+                <label style="text-align: center;">Time B</label><br>
+                <input type="text" class="timeB" id="timeB" disabled="disabled">
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <script src=" javascript.js"></script>
+
+</body>
+
+</html>
